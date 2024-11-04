@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise in javascript</title>
+</head>
+<body>
+    <p>
+        Promise object represents the venetual completion or failure of an asynchronous operation and its resulting value
+    </p>
+
+    <script>
+        // new Promise(function(resolve,reject){
+        //     setTimeout(function(){
+        //         console.log("This is asynchronous operation")
+        //         resolve()
+        //     },2000)
+        // }).then(function(){
+        //     console.log("This is the then part!")
+        // })
+
+
+        // const promiseThree = new Promise(function(resolve,reject){
+        //     setTimeout(function(){
+        //         resolve({username: "Chai", email: "chaiaurcode.com"})
+        //     },2000)
+        // })
+
+        // promiseThree.then(function(user){
+        //     console.log(user)
+        // })
+
+        // const promiseFour = new Promise(function(resolve,reject){
+        //     setTimeout(()=>{
+        //         let error = true
+        //         if(!error){
+        //             resolve({username: "Sonis", email: "Sonis@gmail.com"})
+        //         }else{
+        //             reject("Something error occured")
+        //         }
+        //     },1000)
+        // })
+
+        // promiseFour.then(function(user){
+        //     console.log(user)
+        //     return user.username
+        // }).then((username)=>{
+        //     console.log(username)
+        // }).catch(function(error){
+        //     console.log(error)
+        // }).finally(function(){
+        //     console.log("The promise is either resovled or rejected")
+        // })
+
+        const promiseFive = new Promise(function(resolve, reject){
+            setTimeout(()=>{
+                let error = true
+                if(!error){
+                    resolve({username: "Sonis", email: "sonis@gmail.com"})
+                }else{
+                    reject("Something went wrong")
+                }
+            },1000)
+        })
+    </script>
+</body>
+</html>

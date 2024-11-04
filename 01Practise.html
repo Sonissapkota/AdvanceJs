@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+
+    <script>
+        
+        // Calling settime out along with an anonymous function as a parameter
+        setTimeout(function(){
+            console.log("Sonis")
+        },2000)
+
+        //Calling the reference of anonymous funciton isntead of function itself
+        const sonis = function (){
+            console.log("Sonis from reference")
+        }
+        setTimeout(sonis,2000)
+    </script>
+</body>
+</html>
