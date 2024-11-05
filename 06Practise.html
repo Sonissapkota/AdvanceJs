@@ -63,6 +63,17 @@
                 }
             },1000)
         })
+
+        async function consumePromiseFive(){
+            try{
+                const output = await promiseFive
+                console.log(output);
+            }catch(error){
+                console.log(error);
+            }
+        }
+
+        consumePromiseFive()
     </script>
 </body>
 </html>
