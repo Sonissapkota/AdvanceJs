@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adavance function</title>
+</head>
+<body>
+    <script>
+        const myNum = [1,2,3,4,5,6,7,8,9,10]
+
+        // const newNum = myNum.map((num)=> num + 10)
+        // console.log(newNum)
+
+        // const newNum = []
+        // myNum.forEach((num)=>{
+        //     newNum.push(num+10)
+        // })
+        // console.log(newNum)
+
+        // Use chaining
+        // const newNum = myNum.map((num)=>num*10).map((num)=>num+1).filter((num)=>num>50)
+        // console.log(newNum)
+
+        const lang = ['js', 'python', 'css', 'html', 'cpp', 'c#']
+        lang.map((item, index)=>{
+            console.log(item)
+            console.log(index)
+        })
+    </script>
+</body>
+</html>
