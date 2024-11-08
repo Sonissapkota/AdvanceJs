@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance JS function</title>
+</head>
+<body>
+    <script>
+        // const myNum = [1,2,3]
+        // const newNum = myNum.reduce((accu, num)=>{
+        //     console.log(`Accu:${accu} Num:${num}`)
+        //     return accu + num
+        // },0)
+        // console.log(newNum)
+
+        const shoppingCart = [
+            {itemName: 'js Course', price: 2999},
+            {itemName: 'React Course', price: 999},
+            {itemName: 'Mobile Development', price: 4999},
+            {itemName: 'Data Analyst', price: 2000},
+            {itemName: 'Node Js', price: 999}
+        ]
+
+        const priceToPay = shoppingCart.reduce((accu , curr)=>{
+            return accu + curr.price
+        },0)
+
+        console.log(priceToPay)
+    </script>
+</body>
+</html>
